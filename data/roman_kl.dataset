@@ -1,0 +1,12 @@
+data_file = Roman_Ntomo10_KL.datavector
+cov_file = Roman_ssss_cov_Ncl20_Ntomo10
+mask_file = Roman_Ntomo10_KL.mask
+nz_lens_file = Roman_tomo_Ntomo10_src.nz
+nz_source_file = Roman_tomo_Ntomo10_src.nz
+lens_ntomo = 10
+source_ntomo = 10
+n_cl = 20
+l_min= 20
+l_max = 4000
+l_max_shear = 4000
+# baryon_pca_file = build_your_own_pca_file
