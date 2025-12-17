@@ -32,9 +32,9 @@ class _cosmolike_prototype_base(DataSetLikelihood):
     self.lens_ntomo = ini.int("lens_ntomo") #5
     self.source_ntomo = ini.int("source_ntomo") #4
     self.ncl = ini.int("n_cl")
-    self.lmin = ini.float("l_min")
-    self.lmax = ini.float("l_max")
-    self.lmax_shear = ini.float("l_max_shear")
+    self.lmin = ini.int("l_min")
+    self.lmax = ini.int("l_max")
+    self.lmax_shear = ini.int("l_max_shear")
     
     # ------------------------------------------------------------------------   
     tmp=int(1000 + 250*self.accuracyboost)
@@ -56,7 +56,7 @@ class _cosmolike_prototype_base(DataSetLikelihood):
     
     ci.init_probes(possible_probes=self.probe)
 
-    ci.init_binning(int(self.ncl), self.lmin, self.lmax, self.lmax_shear)
+    ci.init_binning(int(self.ncl), int(self.lmin), int(self.lmax), int(self.lmax_shear))
 
     ci.init_ggl_exclude(np.array(self.ggl_exclude).flatten())
 
