@@ -1,5 +1,5 @@
 #!/bin/bash
-#SBATCH --job-name=DC1_real
+#SBATCH --job-name=kl_cocoa
 #SBATCH --output=/xdisk/timeifler/yhhuang/log/kl-%A.out
 #SBATCH --error=/groups/timeifler/yhhuang/log/kl-%A.err
 #SBATCH --nodes=1
@@ -16,7 +16,7 @@
 #SBATCH --account=timeifler
 
 # path
-export MCMC_YAML=./projects/roman_real/EXAMPLE_MCMC1.yaml
+export MCMC_YAML=./projects/roman_kl/MCMC_cosmic_shear.yaml
 export RUN_MODE_FLAG="-r"
 
 echo Running on host `hostname`
