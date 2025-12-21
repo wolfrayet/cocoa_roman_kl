@@ -18,7 +18,7 @@ external_nz_modeling: 0
 use_emulator: False
 
 # REQUIRE GGL_EXCLUDE TO MATCH THE SIZE OF THE 3x2pt DATA VECTOR
-# ggl_exclude: [[0,0],[7,0],[7,1]]
+ggl_exclude: [] 
 
 # BIAS REDSHIFT EVOLUTION [b1,b2,bs2,b3,bmag] (see bias.c)
 #bias_model: [0,0,0,1,0]

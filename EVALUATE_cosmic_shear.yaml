@@ -13,7 +13,7 @@ likelihood:
     non_linear_emul: 2
     IA_model: 0
     IA_redshift_evolution: 0
-    # ggl_exclude: [[6,0],[7,0],[7,1]]
+    ggl_exclude: []
     create_baryon_pca: false
     baryon_pca_select_sims: "antilles-2-99/antilles-101-378/antilles-380-400"
     filename_baryon_pca: "./projects/lsst_y1/chains/pca.txt"
